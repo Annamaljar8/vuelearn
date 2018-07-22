@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise_3_correct</title>
+</head>
+<body>
+  <div id="exercise_3">
+    <p>Current value: {{ value }}</p>
+    <button @click="value += 5">Add 5</button>
+    <button @click="value += 1">Add 1</button>
+    <p>{{ result }}</p>
+    <div>
+      <input type="text">
+      <p>{{ value }}</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#exercise_3',
+    data: {
+      value: 0
+    },
+    computed: {
+      result: function() {
+        return this.value == 37 ? 'done' : 'not there yet';
+      }
+    },
+    watch: {
+      result: function() {
+        var vm = this;
+        setTimeout(function() {
+          vm.value = 0;
+        }, 5000);
+      }
+    }
+  });
+  </script>
+</body>
+</html>

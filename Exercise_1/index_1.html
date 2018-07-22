@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise_1</title>
+</head>
+<body>
+  <div id="exercise">
+    <p>VueJS is pretty cool - {{ name }} ({{ age }})</p>
+    <p>{{ sayAge() }}</p>
+    <p>{{ randomNumber() }}</p>
+    <div>
+      <img v-bind:src="imageSrc">
+    </div>
+    <div>
+      <input type="text" v-on:input="changeName" placeholder="Name">
+      <input type="text" v-on:input="changeAge" placeholder="Age">
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+  <script>
+  new Vue({
+    el: '#exercise',
+    data: {
+      name: '',
+      age: 0,
+      imageSrc: "https://sovets.net/photos/uploads/165/8381750-17820547.jpg",
+    },
+    methods: {
+      sayAge: function(age) {
+        return this.age*3},
+        randomNumber: function getRandom() {
+          return Math.random();},
+      changeName: function(event) {
+        this.name = event.target.value;},
+      changeAge: function(event) {
+        this.age = event.target.value;},
+    }
+  });
+</script>
+</body>
+</html>

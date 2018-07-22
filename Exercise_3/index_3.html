@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise_3</title>
+</head>
+<body>
+  <div id="exercise_3">
+    <p>Current value: {{ value }}</p>
+    <button @click="value += 5">Add 5</button>
+    <button @click="value += 1">Add 1</button>
+    <p>{{ result() }}</p>
+    <div>
+      <input type="text" v-model="value2">
+      <p>{{ value3 }}</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+  <script src="logic_3.js"></script>
+</body>
+</html>
