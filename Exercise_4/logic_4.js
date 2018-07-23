@@ -1,11 +1,14 @@
 new Vue({
   el: '#exercise',
   data: {
-
+    startEffect: false
   },
   methods: {
-    startEffect: function() {
-
+    startEffect: function(){
+      return {
+        highlight=this.startEffect
+      }
     }
-  }
+    }
+
 });
