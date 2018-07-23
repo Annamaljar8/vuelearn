@@ -4,11 +4,6 @@ new Vue({
     startEffect: false
   },
   methods: {
-    startEffect: function(){
-      return {
-        highlight=this.startEffect
-      }
-    }
     }
 
 });
