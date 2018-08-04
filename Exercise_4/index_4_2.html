@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise_4</title>
+  <link rel="stylesheet" type="text/css" href="style_4_2.css">
+</head>
+<body>
+<div id="exercise">
+  <div>
+    <button @click="startEfect">Start Effect</button>
+    <div id="effect" :class="{highlight: attachHighlight}"></div>
+  </div>
+    <div
+    @click = "attachBig = !attachBig"
+    :class [color, {blue: !attachBig}]>I got no class</div>
+
+  <div>
+    <input type="text">
+    <div></div>
+  </div>
+
+  <div>
+    <input type="text">
+    <input type="text">
+    <div></div>
+  </div>
+
+  <div>
+    <input type="text">
+    <div></div>
+  </div>
+
+  <div>
+    <button >Start Progress</button>
+    <div></div>
+  </div>
+</div>
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+<script src="logic_4_2.js"></script>
+
+</body>
+</html>

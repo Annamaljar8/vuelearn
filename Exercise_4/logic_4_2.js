@@ -3,13 +3,9 @@ new Vue({
   data: {
   attachHighlight: false,
   attachBig: false,
-  fontSize: 'big',
-  color: '',
-  myClass: '',
-  isShrink: true,
+  color: 'green',
 },
-
-  methods: {
+methods: {
   startEfect: function () {
     setInterval (() => {
       this.attachHighlight = !this.attachHighlight;

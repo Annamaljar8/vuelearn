@@ -7,26 +7,21 @@
 .highlight {
   background-color: red;
   width: 200px !important;
-
 }
+
 .shrink {
   background-color: gray;
   width: 50px !important;
-  height: 100px;
-  border: 1px solid #000;
 }
 .big{
-  font-size: 70px;
-
+  font-size: 50px;
 }
 .little{
-  font-size: 25px;
+  font-size: 10px;
 }
 .green{
-  background-color: green;
+  color:green;
 }
 .blue{
-  background-color: blue;
+  color: blue;
 }
-.float {
-  float: right;}

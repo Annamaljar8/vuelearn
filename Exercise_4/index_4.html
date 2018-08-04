@@ -9,24 +9,30 @@
 <div id="exercise">
   <div>
     <button @click="startEfect">Start Effect</button>
-    <div id="effect" :class="{highlight: highlight_visible, shrink: shrink_visible}"></div>
+    <div id="effect" :class="{highlight: attachHighlight}"></div>
   </div>
-    <div>I got no class :(</div>
+    <div
+    @click = "attachBig = !attachBig"
+    :class ="[fontSize, {little: !attachBig}]">I got no class :(</div>
+
 
   <div>
-    <input type="text">
-    <div></div>
+    <input type="text" v-model="myClass">
+    <div v-bind:class="[{shrink: true}, myClass]">
+    </div>
+
   </div>
 
   <div>
-    <input type="text">
-    <input type="text">
-    <div></div>
+    <input type="text" v-model="myClass">
+    <input type="text" v-model="isShrink">
+
+    <div  v-bind:class="[{shrink: isShrink}, myClass]"></div>
   </div>
 
   <div>
-    <input type="text">
-    <div></div>
+    <input type="text" v-model="color">
+    <div id="effect" v-bind:style="{backgroundColor:color}"></div>
   </div>
 
   <div>
