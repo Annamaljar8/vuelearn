@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/fontawesome.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		
+		<title>PPK</title>
+	</head>
+	<body>
+		<div class="wrapper">
+		<div class="content">
+		<nav class="navbar navbar-lg navbar-expand-lg navbar-transparant navbar-dark navbar-absolute w-100">
+		  <a class="navbar-brand" href="#"><img src="img/PPK_logo3.png" class="logo-ppk" /></a>
+		  <a class="navbar-brand ml-md-auto"><img src="img/logo.png" class="logo-tfi" /></a>
+		</nav>
+		<div class="intro bg-primary position-relative text-white pt-8 pb-8">
+			<div class="bg-overlay-primary">
+				<img class="img-fluid img-cover" src="img/nature-lawn-blur-flower.jpg" />
+			</div>
+		</div>
+		<div class="main pt-8 pb-8">
+			<div class="container">
+				<div class="row">
+					<div class="card w-100">
+					  <div class="card-body text-dark">
+						<form>
+							<div class="alert alert-light" role="alert">
+							  Po podaniu KRS lub REGON dane Pracodawcy powinny się uzupełnić automatycznie. Prosimy o ich sprawdzenie i ewentualne uzupełnienie brakujących pól.
+							</div>
+						  <div class="form-group">
+							<label for="acc_number">KRS</label>
+							<input class="form-control is-valid" id="acc_number" placeholder="KRS" type="text" value="123456" required>
+							<div class="valid-feedback">
+								Looks good!
+							 </div>
+						  </div>
+						  <div class="form-group">
+							<label for="regon">REGON</label>
+							<input class="form-control" id="regon" placeholder="REGON" type="text" >
+						  </div>
+						  <div class="form-group">
+							<label for="name_pod">Nazwę podmiotu zatrudniającego</label>
+							<input class="form-control" id="name_pod" placeholder="" type="text">
+						  </div>
+						  <div class="form-group">
+							<label for="nip">NIP podmiotu zatrudniającego</label>
+							<input class="form-control" id="nip" placeholder="" type="text">
+						  </div>
+						  <div class="form-group">
+							<label for="doc">Serię i numer dokumentu tożsamości lub paszportu osoby fizycznej, jeżeli nie nadano NIP</label>
+							<input class="form-control" id="doc" placeholder="" type="text">
+						  </div>
+						  <fieldset>
+							<legend>Adres siedziby podmiotu zatrudniającego</legend>
+							  <div class="form-row">
+								<div class="col-md-6 mb-3">
+								  <label for="validationCustom03">City</label>
+								  <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+								  <div class="invalid-feedback">
+									Please provide a valid city.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom04">State</label>
+								  <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+								  <div class="invalid-feedback">
+									Please provide a valid state.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom05">Zip</label>
+								  <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+								  <div class="invalid-feedback">
+									Please provide a valid zip.
+								  </div>
+								</div>
+							  </div>
+						  </fieldset>
+						  
+						  <fieldset>
+							<legend>Adres do korespondencji podmiotu zatrudniającego</legend>
+							  <div class="form-row">
+								<div class="col-md-6 mb-3">
+								  <label for="validationCustom06">City</label>
+								  <input type="text" class="form-control" id="validationCustom06" placeholder="City" required>
+								  <div class="invalid-feedback">
+									Please provide a valid city.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom07">State</label>
+								  <input type="text" class="form-control" id="validationCustom07" placeholder="State" required>
+								  <div class="invalid-feedback">
+									Please provide a valid state.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom08">Zip</label>
+								  <input type="text" class="form-control" id="validationCustom08" placeholder="Zip" required>
+								  <div class="invalid-feedback">
+									Please provide a valid zip.
+								  </div>
+								</div>
+							  </div>
+						  </fieldset>
+						  <div class="alert alert-light" role="alert">
+						  Prosimy o podanie danych kontaktowych, na które zostaną przekazane następujące dane:
+						  <ul>
+							<li>umowa o zarządzanie PPK</li>
+							<li>login do serwisu PPK</li>
+							<li>kod PIN do serwisu PPK</li>
+							</ul>
+						  </div>
+						  <fieldset>
+							<legend>Dane kontaktowe podmiotu zatrudniającego</legend>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input class="form-control" id="email" placeholder="Email" type="email" >
+							  </div>
+							  <div class="form-group">
+								<label for="tel">Numer telefonu komórkowego</label>
+								<input class="form-control" id="tel" placeholder="Numer telefonu" type="text" >
+							  </div>
+						</fieldset>
+						
+						<fieldset>
+							<legend>Dane Reprezentantów</legend>
+							<div class="form-group">
+								<label for="name">Imię</label>
+								<input class="form-control" id="name" placeholder="Imię" type="text" >
+							</div>
+							<div class="form-group">
+								<label for="surname">Nazwisko</label>
+								<input class="form-control" id="surname" placeholder="Nazwisko" type="text" >
+							</div>
+							<div class="form-group">
+								<label for="pesel">PESEL</label>
+								<input class="form-control" id="pesel" placeholder="PESEL" type="text" >
+							</div>
+							<div class="form-group">
+								<label for="other_doc">Numer DO lub Paszport</label>
+								<input class="form-control" id="other_doc" placeholder="Numer DO lub Paszport" type="text" >
+							</div>
+							<h6>Adres zamieszkania</h6>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+								  <label for="validationCustom09">City</label>
+								  <input type="text" class="form-control" id="validationCustom09" placeholder="City" required>
+								  <div class="invalid-feedback">
+									Please provide a valid city.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom10">State</label>
+								  <input type="text" class="form-control" id="validationCustom10" placeholder="State" required>
+								  <div class="invalid-feedback">
+									Please provide a valid state.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom11">Zip</label>
+								  <input type="text" class="form-control" id="validationCustom11" placeholder="Zip" required>
+								  <div class="invalid-feedback">
+									Please provide a valid zip.
+								  </div>
+								</div>
+							  </div>
+							<h6>Adres korespondencyjny</h6>
+							<div class="form-row">
+								<div class="col-md-6 mb-3">
+								  <label for="validationCustom12">City</label>
+								  <input type="text" class="form-control" id="validationCustom12" placeholder="City" required>
+								  <div class="invalid-feedback">
+									Please provide a valid city.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom13">State</label>
+								  <input type="text" class="form-control" id="validationCustom13" placeholder="State" required>
+								  <div class="invalid-feedback">
+									Please provide a valid state.
+								  </div>
+								</div>
+								<div class="col-md-3 mb-3">
+								  <label for="validationCustom14">Zip</label>
+								  <input type="text" class="form-control" id="validationCustom14" placeholder="Zip" required>
+								  <div class="invalid-feedback">
+									Please provide a valid zip.
+								  </div>
+								</div>
+							  </div>
+						</fieldset>
+						
+						<fieldset>
+							<legend>Upload pliku z listą Pracowników</legend>
+						
+						  <div class="form-group">
+						  <div class="custom-file">
+							<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+							<label class="custom-file-label" for="validatedCustomFile">Choose file .xls</label>
+							<div class="invalid-feedback">Example invalid custom file feedback</div>
+						  </div>
+						  </div>
+						  </fieldset>
+						  
+						  <button type="submit" class="btn color-2 text-white btn-block btn-lg mb-2">Sign up</button>
+						  <div class="text-center">
+							Already have account? <a href="index.html">Sign in</a>
+						  </div>
+						</form>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer class="color-1">
+			<div class="container">
+				<div class="d-none d-sm-block">
+					<div class="specific_part">
+						<div class="row">
+							<div class="column_2 col col-sm-7">
+								<div class="list_item">
+									<ul class="menu_list">
+										<li>
+											<a target="_blank" href="https://www.nntfi.pl/_fileserver/item/1500356" title="Nota Prawna"><span>Nota Prawna Funduszy</span></a>
+										</li>
+										<li>
+											<a target="_blank" href="https://www.nntfi.pl/_fileserver/item/1501771" title="Nota Prawna Serwisu Transakcyjnego"><span>Nota Prawna Serwisu Transakcyjnego</span></a>
+										</li>
+										<li>
+											<a href="Help.app?menuOpt=helpCookiesInfo&mode=cookiesInfo.POL" title="Polityka cookie"><span>Polityka cookie</span></a>
+										</li>
+									</ul>
+								</div>
+								<p>NN Investment Partners TFI S.A. jest częścią Grupy NN. NN Group N.V. jest spółką, której akcje znajdują się w obrocie publicznym i zarówno NN Group N.V. jak i jej spółki zależne używają znaku towarowego "NN" i powiązanych znaków towarowych Grupy NN w ramach licencji.</p>
+								<p class="dark">NN Investment Partners TFI S.A. ul. Topiel 12, 00-342 Warszawa, biuro@nntfi.pl</p>
+							</div>
+							<div class="col col-sm-5">
+								<div class="column_1 icon-call">
+									<span class="call first">801 609 009</span>
+									<div class="p" style="line-height: 1.4">Infolinia czynna: od poniedziałku do piątku od 9:00 do 17:00.<br />(Koszt połączenia wg stawek operatora)
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="d-block d-sm-none small_box">
+					<div class="scroll_top">
+						<span>Do góry</span>
+					</div>
+					<div class="call_box">
+						<a href="tel:801690555" class="callme_button">801 609 009</a>
+						<p>Infolinia czynna: od poniedziałku do piątku od 9:00 do 17:00.<br />(Koszt połączenia wg stawek operatora)</p>
+					</div>
+					<div class="bottom_box">
+						<div class="list_item">
+							<ul class="menu_list">
+								<li>
+									<a target="_blank" href="https://www.nntfi.pl/_fileserver/item/1500356" title="Nota Prawna"><span>Nota Prawna</span></a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.nntfi.pl/_fileserver/item/1501771" title="Nota Prawna Serwisu Transakcyjnego"><span>Nota Prawna Serwisu Transakcyjnego</span></a>
+								</li>
+								<li>
+									<a href="Help.app?menuOpt=helpCookiesInfo&mode=cookiesInfo.POL" title="Polityka cookie"><span>Polityka cookie</span></a>
+								</li>
+							</ul>
+							<p>NN Investment Partners TFI S.A. jest częścią Grupy NN. NN Group N.V. jest spółką, której akcje znajdują się w obrocie publicznym i zarówno NN Group N.V. jak i jej spółki zależne używają znaku towarowego "NN" i powiązanych znaków towarowych Grupy NN w ramach licencji.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>
