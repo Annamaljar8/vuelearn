@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise_4</title>
+  <link rel="stylesheet" type="text/css" href="style_4.css">
+</head>
+<body>
+<div id="exercise">
+  <!--1-->
+  <div>
+    <button @click="startEfect">Start Effect</button>
+    <div id="effect" :class="{highlight: attachHighlight}"></div>
+  </div>
+  <!--2-->
+    <div
+    :class ="['big', 'green', 'float']">I got no class :(</div>
+  <div>
+    <input type="text" v-model="myClass">
+    <div v-bind:class="[{look:true }, myClass]">
+    </div>
+  </div>
+<!--3-->
+  <div>
+    <input type="text" v-model="myClass">
+    <input type="text" v-model="isLook">
+
+    <div  v-bind:class="[{look: isLook}, myClass]"></div>
+  </div>
+<!--4-->
+  <div>
+    <input type="text" v-model="color">
+    <div id="effect" v-bind:style="{backgroundColor:color}"></div>
+  </div>
+<!--5-->
+  <div>
+    <button @click="startProgress">Start Progress</button>
+    <div :class="['progress-bar']" :style="progressBar"></div>
+  </div>
+</div>
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+
+<script>
+
+new Vue({
+  el: '#exercise',
+  data: {
+  attachHighlight: false,
+  color: '',
+  myClass: '',
+  isLook: true,
+  progressBar: {
+    width: '0px',
+    backgroundColor: 'green'
+  }
+},
+
+  methods: {
+  startEfect: function () {
+    setInterval (() => {
+      this.attachHighlight = !this.attachHighlight;
+    }, 2000);
+  },
+  startProgress: function() {
+    let vm = this;
+    let width = 0;
+
+  setInterval(() => {
+    width = width + 20;
+    vm.progressBar.width = width + 'px';
+    }, 500);
+  }
+}
+})
+
+</script>
+
+</body>
+</html>
