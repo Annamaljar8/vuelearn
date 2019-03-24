@@ -12,22 +12,22 @@
     <div id="effect" :class="{highlight: attachHighlight}"></div>
   </div>
     <div
-    @click = "attachBig = !attachBig"
-    :class ="[fontSize, {little: !attachBig}]">I got no class :(</div>
+
+    :class ="['big', 'green', 'float']">I got no class :(</div>
 
 
   <div>
     <input type="text" v-model="myClass">
-    <div v-bind:class="[{shrink: true}, myClass]">
+    <div v-bind:class="[{look:true }, myClass]">
     </div>
 
   </div>
 
   <div>
     <input type="text" v-model="myClass">
-    <input type="text" v-model="isShrink">
+    <input type="text" v-model="isLook">
 
-    <div  v-bind:class="[{shrink: isShrink}, myClass]"></div>
+    <div  v-bind:class="[{look: isLook}, myClass]"></div>
   </div>
 
   <div>
@@ -36,8 +36,8 @@
   </div>
 
   <div>
-    <button >Start Progress</button>
-    <div></div>
+    <button @click="startProgress">Start Progress</button>
+    <div :class="['progress-bar']" :style="progressBar"></div>
   </div>
 </div>
 <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>

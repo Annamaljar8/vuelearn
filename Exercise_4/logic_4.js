@@ -2,11 +2,13 @@ new Vue({
   el: '#exercise',
   data: {
   attachHighlight: false,
-  attachBig: false,
-  fontSize: 'big',
   color: '',
   myClass: '',
-  isShrink: true,
+  isLook: true,
+  progressBar: {
+    width: '0px',
+    backgroundColor: 'green'
+  }
 },
 
   methods: {
@@ -14,6 +16,15 @@ new Vue({
     setInterval (() => {
       this.attachHighlight = !this.attachHighlight;
     }, 2000);
+  },
+  startProgress: function() {
+    let vm = this;
+    let width = 0;
+
+  setInterval(() => {
+    width = width + 20;
+    vm.progressBar.width = width + 'px';
+    }, 500);
   }
 }
 })
