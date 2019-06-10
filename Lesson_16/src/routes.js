@@ -22,7 +22,7 @@ const UserEdit = resolve => {
 const UserDetail = resolve => {
     require.ensure(['./components/user/UserDetail.vue'], () => {
         resolve(require('./components/user/UserDetail.vue'));
-    }, 'user');
+    });
 };
 
 export const routes = [
